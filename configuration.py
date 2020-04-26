@@ -96,7 +96,7 @@ TRACK_CONFIG = {
   # Logging level of inference, use 1 for detailed inspection. 0 for speed.
   'log_level': 0,
 
-  'x_image_size': 255,  # Search image size during tracking
+  'x_image_size': 1500,  # Search image size during tracking
 
   # Configurations for upsampling score maps
   'upsample_method': 'bicubic',
@@ -109,7 +109,7 @@ TRACK_CONFIG = {
   'scale_penalty': 0.9745,  # Score penalty for scale change
 
   # Configurations for penalizing large displacement from the center
-  'window_influence': 0.176,
+  'window_influence': 0,
 
-  'include_first': False, # If track the first frame
+  'include_first': True, # If track the first frame
 }
